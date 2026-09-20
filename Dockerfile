@@ -6,6 +6,6 @@ COPY . .
 
 RUN ./mvnw clean package -DskipTests
 
-EXPOSE 8081
+EXPOSE 10000
 
-CMD ["java", "-jar", "target/taskmanager-0.0.1-SNAPSHOT.jar"]
+CMD ["sh", "-c", "java -jar target/taskmanager-0.0.1-SNAPSHOT.jar --server.port=${PORT:-10000}"]
