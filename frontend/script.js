@@ -337,7 +337,7 @@ if (registerForm) {
         }
 
         try {
-            const response = await fetch("http://127.0.0.1:8081/users/register", {
+            const response = await fetch(`${USER_API}/register`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
