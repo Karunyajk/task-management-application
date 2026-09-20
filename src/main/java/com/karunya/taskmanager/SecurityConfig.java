@@ -14,7 +14,6 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
-
 @Configuration
 public class SecurityConfig {
 
@@ -36,18 +35,12 @@ public class SecurityConfig {
 
         configuration.setAllowedOrigins(List.of(
                 "http://127.0.0.1:5500",
-                "http://localhost:5500"
-        "https://task-management-frontend-wgyu.onrender.com"
+                "http://localhost:5500",
+                "https://task-management-frontend-wgyu.onrender.com"
         ));
 
-       
-
         configuration.setAllowedMethods(List.of(
-                "GET",
-                "POST",
-                "PUT",
-                "DELETE",
-                "OPTIONS"
+                "GET", "POST", "PUT", "DELETE", "OPTIONS"
         ));
 
         configuration.setAllowedHeaders(List.of("*"));
