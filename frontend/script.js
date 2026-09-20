@@ -1,5 +1,5 @@
-const API_URL = "http://task-management-application-0suh.onrender.com/tasks";
-const USER_API = "http://task-management-application-0suh.onrender.com/users";
+const API_URL = "https://task-management-application-0suh.onrender.com/tasks";
+const USER_API = "https://task-management-application-0suh.onrender.com/users";
 
 // =========================
 // Load Tasks
