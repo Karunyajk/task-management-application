@@ -68,7 +68,7 @@ public class SecurityConfig {
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/users/register","/users/login").permitAll()
                 .requestMatchers("/tasks/**").authenticated()
-                .anyRequest().authenticated()
+                .anyRequest().permitAll()
             );
 
         return http.build();
